@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruteria</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <main>
+
+        <div class="list-fruit-results">
+            <div class="fruit">
+                <img src="img/apple.png" alt="apple">
+            </div>
+            <div class="fruit">
+                <img src="img/banana.jpeg" alt="banana">
+            </div>
+            <div class="fruit">
+                <img src="img/orange.png" alt="orange">
+            </div>
+            <div class="fruit">
+                <img src="img/peach.png" alt="peach">
+            </div>
+            <div class="fruit">
+                <img src="img/pear.png" alt="pear">
+            </div>
+            <div class="fruit">
+                <img src="img/melon.png" alt="melon">
+            </div>
+        </div>
+
+        <div class="list-fruit">
+            <div class="fruit">
+                <p>apple</p>
+            </div>
+            <div class="fruit">
+                <p>banana</p>
+            </div>
+            <div class="fruit">
+                <p>orange</p>
+            </div>
+            <div class="fruit">
+                <p>peach</p>
+            </div>
+            <div class="fruit">
+                <p>pear</p>
+            </div>
+            <div class="fruit">
+                <p>melon</p>
+            </div>
+        </div>
+    </main>
+    <script>
+       $(document).ready(function(){
+        $('p').click(function(){
+            $(this).css("color",'blue');
+        });
+        });
+    </script>
+    
+</body>
+</html>
