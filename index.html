@@ -11,7 +11,7 @@
     <main>
 
         <div class="list-fruit-results">
-            <div class="fruit">
+            <div id="apple-result" class="fruit">
                 <img src="img/apple.png" alt="apple">
             </div>
             <div class="fruit">
@@ -32,7 +32,7 @@
         </div>
 
         <div class="list-fruit">
-            <div class="fruit">
+            <div id="apple" class="fruit">
                 <p>apple</p>
             </div>
             <div class="fruit">
@@ -52,12 +52,26 @@
             </div>
         </div>
     </main>
-    <script>
-       $(document).ready(function(){
-        $('p').click(function(){
-            $(this).css("color",'blue');
+    <script defer>
+        $(document).ready(function(){
+            appleClicked = false;
+            $('#apple-result').click(function(){
+                appleClicked = true;
+                alert('The picture is clicked, now click the name ');
+            });
+
+            $('#apple').click(function(){
+            if(appleClicked){
+                $("#apple").css("background-color", "green");
+                $("#apple p").css("background-color", "green");
+            }else {
+                $("#apple").css("background-color", "red");
+                $("#apple p").css("background-color", "red");
+            }   
+             });
         });
-        });
+  
+
     </script>
     
 </body>
