@@ -4,6 +4,12 @@
     background-color: antiquewhite;
 }
 
+h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .list-fruit, .list-fruit-results {
     display: grid;
     justify-content: center;
