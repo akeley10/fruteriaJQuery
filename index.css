@@ -14,8 +14,9 @@ h2{
     display: grid;
     justify-content: center;
     margin: 0 auto;
-    grid-template-columns: 300px 300px 300px;
-    height: 30rem;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    height: 15rem;
     width: 100%;
 }
 .list-fruit p{

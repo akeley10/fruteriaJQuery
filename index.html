@@ -16,19 +16,19 @@
             <div id="apple-result" class="fruit">
                 <img src="img/apple.png" alt="apple">
             </div>
-            <div class="fruit">
+            <div id="banana-result" class="fruit">
                 <img src="img/banana.jpeg" alt="banana">
             </div>
-            <div class="fruit">
+            <div id="orange-result"class="fruit">
                 <img src="img/orange.png" alt="orange">
             </div>
-            <div class="fruit">
+            <div id="peach-result" class="fruit">
                 <img src="img/peach.png" alt="peach">
             </div>
-            <div class="fruit">
+            <div id="pear-result" class="fruit">
                 <img src="img/pear.png" alt="pear">
             </div>
-            <div class="fruit">
+            <div id="melon-result" class="fruit">
                 <img src="img/melon.png" alt="melon">
             </div>
         </div>
@@ -37,29 +37,33 @@
             <div id="apple" class="fruit">
                 <p>apple</p>
             </div>
-            <div class="fruit">
+            <div id="banana" class="fruit">
                 <p>banana</p>
             </div>
-            <div class="fruit">
+            <div id="orange" class="fruit">
                 <p>orange</p>
             </div>
-            <div class="fruit">
+            <div id="peach" class="fruit">
                 <p>peach</p>
             </div>
-            <div class="fruit">
+            <div id="pear" class="fruit">
                 <p>pear</p>
             </div>
-            <div class="fruit">
+            <div id="melon" class="fruit">
                 <p>melon</p>
             </div>
         </div>
     </main>
     <script defer>
         $(document).ready(function(){
+            melonClicked = false;
+            pearClicked = false;
+            peachClicked = false;
+            orangeClicked = false;
+            bananaClicked = false;
             appleClicked = false;
             $('#apple-result').click(function(){
                 appleClicked = true;
-                alert('The picture is clicked, now click the name ');
             });
 
             $('#apple').click(function(){
@@ -71,7 +75,80 @@
                 $("#apple p").css("background-color", "red");
             }   
              });
+
+             $('#banana-result').click(function(){
+                bananaClicked = true;
+            });
+
+            $('#banana').click(function(){
+                if(bananaClicked){
+                    $("#banana").css("background-color",'green');
+                    $("#banana p").css("background-color",'green');
+                }else{
+                    $("#banana").css("background-color",'red');
+                    $("#banana p").css("background-color",'red');
+                }
+            });
+
+            $('#orange-result').click(function(){
+                orangeClicked = true;
+            });
+
+            $('#orange').click(function(){
+                if(orangeClicked){
+                    $("#orange").css("background-color",'green');
+                    $("#orange p").css("background-color",'green');
+                }else{
+                    $("#orange").css("background-color",'red');
+                    $("#orange p").css("background-color",'red');
+                }
+            });
+
+            $('#peach-result').click(function(){
+                peachClicked = true;
+            });
+
+            $('#peach').click(function(){
+                if(peachClicked){
+                    $("#peach").css("background-color",'green');
+                    $("#peach p").css("background-color",'green');
+                }else{
+                    $("#peach").css("background-color",'red');
+                    $("#peach p").css("background-color",'red');
+                }
+            });
+
+            $('#pear-result').click(function(){
+                pearClicked = true;
+            });
+
+            $('#pear').click(function(){
+                if(pearClicked){
+                    $("#pear").css("background-color",'green');
+                    $("#pear p").css("background-color",'green');
+                }else{
+                    $("#pear").css("background-color",'red');
+                    $("#pear p").css("background-color",'red');
+                }
+            });
+
+            $('#melon-result').click(function(){
+                melonClicked = true;
+            });
+
+            $('#melon').click(function(){
+                if(melonClicked){
+                    $("#melon").css("background-color",'green');
+                    $("#melon p").css("background-color",'green');
+                }else{
+                    $("#melon").css("background-color",'red');
+                    $("#melon p").css("background-color",'red');
+                }
+            });
         });
+
+ 
+    
   
 
     </script>
