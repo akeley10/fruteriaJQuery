@@ -41,3 +41,14 @@ h2{
     height: 80px;
     background-color: aliceblue;
 }
+
+@media (max-width: 900px) {
+    .list-fruit, .list-fruit-results {
+        grid-template-columns: repeat(3, 1fr);
+        height: 30rem;
+    }
+    .list-fruit-results img{
+        height: 40px;
+    }
+  }
+
