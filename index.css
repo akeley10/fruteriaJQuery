@@ -15,6 +15,7 @@ h2{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 50px;
 }
 
 .list-fruit, .list-fruit-results {
@@ -23,11 +24,12 @@ h2{
     margin: 0 auto;
     gap: 10px;
     grid-template-columns: repeat(6, 1fr);
-    height: 15rem;
+    height: 20rem;
     width: 100%;
 }
+
 .list-fruit p{
-    margin-top:5rem;
+    margin-top:8rem;
     background-color: aliceblue;
     font-weight: bold;
 }
@@ -42,9 +44,8 @@ h2{
 }
 
 
-
 .list-fruit-results img{
-    margin-top:4rem;
+    margin-top:6rem;
     height: 80px;
     background-color: aliceblue;
 }
@@ -58,6 +59,7 @@ h2{
     z-index: 1;
     top: 50%;
     left: 50%;
+    border-radius: 10px;
     transform: translate(-50%, -50%);
 }
 
