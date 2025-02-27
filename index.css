@@ -85,5 +85,17 @@ h2{
     .list-fruit-results img{
         height: 40px;
     }
+
+    .list-fruit p{
+        margin-top:5rem;
+        background-color: aliceblue;
+        font-weight: bold;
+    }
+
+    .list-fruit-results img{
+        margin-top:5rem;
+        height: 50px;
+        background-color: aliceblue;
+    }
   }
 
