@@ -17,6 +17,11 @@ $(document).ready(function(){
 
     $('#apple-result').click(function(){
         appleClicked = true;
+        melonClicked = false;
+        pearClicked = false;
+        peachClicked = false;
+        orangeClicked = false;
+        bananaClicked = false;
     });
 
     $('#apple').click(function(){
@@ -31,6 +36,11 @@ $(document).ready(function(){
 
      $('#banana-result').click(function(){
         bananaClicked = true;
+        appleClicked = false;
+        melonClicked = false;
+        pearClicked = false;
+        peachClicked = false;
+        orangeClicked = false;
     });
 
     $('#banana').click(function(){
@@ -45,6 +55,11 @@ $(document).ready(function(){
 
     $('#orange-result').click(function(){
         orangeClicked = true;
+        bananaClicked = false;
+        appleClicked = false;
+        melonClicked = false;
+        pearClicked = false;
+        peachClicked = false;
     });
 
     $('#orange').click(function(){
@@ -59,6 +74,11 @@ $(document).ready(function(){
 
     $('#peach-result').click(function(){
         peachClicked = true;
+        orangeClicked = false;
+        bananaClicked = false;
+        appleClicked = false;
+        melonClicked = false;
+        pearClicked = false;
     });
 
     $('#peach').click(function(){
@@ -73,6 +93,11 @@ $(document).ready(function(){
 
     $('#pear-result').click(function(){
         pearClicked = true;
+        peachClicked = false;
+        orangeClicked = false;
+        bananaClicked = false;
+        appleClicked = false;
+        melonClicked = false;
     });
 
     $('#pear').click(function(){
@@ -87,6 +112,11 @@ $(document).ready(function(){
 
     $('#melon-result').click(function(){
         melonClicked = true;
+        pearClicked = false;
+        peachClicked = false;
+        orangeClicked = false;
+        bananaClicked = false;
+        appleClicked = false;
     });
 
     $('#melon').click(function(){
