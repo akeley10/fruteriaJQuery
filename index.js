@@ -5,6 +5,12 @@ $(document).ready(function(){
     orangeClicked = false;
     bananaClicked = false;
     appleClicked = false;
+
+    $('#close').click(function(){
+        $('#popup').css("display","none");
+    });
+  
+
     $('#apple-result').click(function(){
         appleClicked = true;
     });
