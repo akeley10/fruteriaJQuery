@@ -6,8 +6,12 @@ $(document).ready(function(){
     bananaClicked = false;
     appleClicked = false;
 
+    $('#fruits').css('pointer-events','none');
+
+
     $('#close').click(function(){
         $('#popup').css("display","none");
+        $('#fruits').css('pointer-events','auto');
     });
   
 

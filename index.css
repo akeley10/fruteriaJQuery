@@ -3,7 +3,9 @@
     margin:0;
    
 }
-
+html:disabled{
+    background-color: gray;
+}
 body{
     background-color: antiquewhite;
 }
@@ -51,11 +53,20 @@ h2{
     padding: 5px;
     display: block;
     background-color:coral;
-    margin: 0 auto;
     position: absolute;
     text-align: center;
     z-index: 1;
-    height: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#popup h4{
+    font-size: 40px;
+}
+
+#popup p{
+    font-size: 30px;
 }
 
 #popup button {
