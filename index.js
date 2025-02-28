@@ -8,11 +8,13 @@ $(document).ready(function(){
 
     $('#fruits').css('pointer-events','none');
     $('#fruits').css('opacity','0.4');
+    $('h2').css('opacity','0.4');
 
     $('#close').click(function(){
         $('#popup').css("display","none");
         $('#fruits').css('pointer-events','auto');
         $('#fruits').css('opacity','1');
+        $('h2').css('opacity','1');
     });
   
 
